@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which make up the genus Nycticebus.
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>-->
+    <!-- <a href = "javascript:void(0);"  id = "creatingtable" onClick = "creatingTable()">abc</a> -->
+     <table id = "creatingtable"> 
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    </table> 
+</body>
+ <script>  
+    // function expandLoris() {
+    //     var para = document.getElementById("slowLoris");
+    //     alert(para);
+    //     alert(para.innerHTML);
+    //     para.innerHTML = "Hello World";
+    // } -->
+
+    var id = [1,2];
+    var Name = ["Mustafa","Idrees"];
+    // creatingTable();
+    // function creatingTable() {
+    //    var div = document.getElementById("creatingtable");
+    //    var div1 = div.innerHTML;
+    //    div1 += "<tr>" + "<td>" + "1" + "</td>";
+
+    var ref = document.getElementById("creatingtable");
+    for(var i = 0;i < Name.length;i++) {
+        ref.innerHTML += `<tr>
+        <td>${id[i]}</td>
+        <td>${Name[i]}</td>
+        <td>Delete</td>    
+        </tr>`
+    }
+    // }
+</script>  
+</body>
+</html>
